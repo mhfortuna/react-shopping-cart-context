@@ -18,18 +18,6 @@ function CreditCard({ carholderName, cardNumber, cardCvv, cardExpiry, flip }) {
             <div className="front">
               <div className="strip-bottom" />
               <div className="strip-top" />
-              <svg
-                className="logo"
-                width="40"
-                height="40"
-                viewBox="0 0 17.5 16.2"
-              >
-                <path
-                  d="M3.2 0l5.4 5.6L14.3 0l3.2 3v9L13 16.2V7.8l-4.4 4.1L4.5 8v8.2L0 12V3l3.2-3z"
-                  fill="white"
-                />
-              </svg>
-              <div className="investor">Investor</div>
               <div className="chip">
                 <div className="chip-line" />
                 <div className="chip-line" />

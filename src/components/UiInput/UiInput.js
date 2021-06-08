@@ -15,13 +15,13 @@ function UiInput({
   type = "text",
   ...props
 }) {
-  function handleClick(e) {
-    if (e.target.id === "cardCvv") {
+  function handleFocus(e) {
+    if (id === "cardCvv") {
       handleFlip(e);
     }
   }
   function onHandleBlur(e) {
-    if (e.target.id === "cardCvv") {
+    if (id === "cardCvv") {
       handleFlip(e);
     }
     handleBlur(e);
@@ -39,7 +39,7 @@ function UiInput({
       value={value}
       onChange={handleChange}
       onBlur={onHandleBlur}
-      onClick={handleClick}
+      onFocus={handleFocus}
       error={hasErrorMessage && Boolean(errorMessage)}
       helperText={hasErrorMessage && errorMessage}
       type={type}
