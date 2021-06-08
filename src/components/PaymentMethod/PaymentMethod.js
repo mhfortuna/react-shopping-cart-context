@@ -3,9 +3,9 @@ import React from "react";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import UiCustomRadio from "../UiCustomRadio";
 
-import visaImage from "../../img/icons/payment/Visa.png";
-import mastercardImage from "../../img/icons/payment/MasterCard.png";
-import amexImage from "../../img/icons/payment/AmericanExpress.png";
+import visaImage from "../../img/icons/payment/Visa_Inc.-Logo.wine.svg";
+import mastercardImage from "../../img/icons/payment/Mastercard-Logo.wine.svg";
+import amexImage from "../../img/icons/payment/American_Express-Logo.wine.svg";
 import paypalImage from "../../img/icons/payment/Paypal.png";
 import applePayImage from "../../img/icons/payment/Apple.png";
 

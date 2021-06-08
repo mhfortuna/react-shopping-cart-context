@@ -147,7 +147,6 @@ function Payment() {
                   </div>
                 </div>
               </div>
-              {/* <div className="col-6">Aquí va la tarjeta</div> */}
               <CreditCard
                 flip={flip}
                 cardNumber={formik.values.cardNumber}
