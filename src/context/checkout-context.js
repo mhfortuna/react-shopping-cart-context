@@ -31,10 +31,10 @@ function CheckoutReducer(state, action) {
 export const CheckoutContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(CheckoutReducer, initialState);
 
-  function updateCheckoutContext(operation) {
+  function updateCheckoutContext(data) {
     dispatch({
       type: "UPDATE_CHECKOUT",
-      payload: operation,
+      payload: data,
     });
   }
 
