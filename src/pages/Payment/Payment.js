@@ -20,6 +20,8 @@ import CVV from "../../img/icons/payment/CVV.svg";
 import sslIcon from "../../img/icons/payment/ssl.svg";
 import CreditCard from "../../components/CreditCard";
 
+import { SUMMARY } from "../../constants/routes";
+
 function Payment() {
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const { updateCheckoutContext } = useContext(CheckoutContext);
@@ -27,7 +29,7 @@ function Payment() {
 
   const formik = useFormik({
     initialValues: {
-      paymentMethod: "card",
+      paymentMethod: "Credit/Debit Card",
       carholderName: "",
       cardNumber: "",
       cardExpiry: "",
@@ -173,11 +175,11 @@ function Payment() {
           <div className="row">
             <div className="col col-12 mt-4 d-flex justify-content-center">
               <Button submitButton block>
-                {formik.isSubmitting ? "Submitting..." : "Next page"}
+                {formik.isSubmitting ? "Submitting..." : "Finish purchase"}
               </Button>
             </div>
           </div>
-          {hasSubmitted && <Redirect to="/" />}
+          {hasSubmitted && <Redirect to={SUMMARY} />}
         </div>
       </form>
     </>
