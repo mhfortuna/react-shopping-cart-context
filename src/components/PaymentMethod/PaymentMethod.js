@@ -12,19 +12,19 @@ import applePayImage from "../../img/icons/payment/Apple.png";
 export default function PaymentMethod({ value, changeHandler }) {
   const paymentOptions = [
     {
-      method: "card",
+      method: "Credit/Debit Card",
       formText: "Credit/Debit Card",
       formImage: false,
       disabled: false,
     },
     {
-      method: "paypal",
+      method: "Paypal",
       formText: false,
       formImage: paypalImage,
       disabled: true,
     },
     {
-      method: "applePay",
+      method: "ApplePay",
       formText: false,
       formImage: applePayImage,
       disabled: true,
