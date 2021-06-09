@@ -17,6 +17,7 @@ import withCheckoutLayout from "../../hoc/withCheckoutLayout";
 import CheckoutContext from "../../context/checkout-context";
 
 import CVV from "../../img/icons/payment/CVV.svg";
+import sslIcon from "../../img/icons/payment/ssl.svg";
 import CreditCard from "../../components/CreditCard";
 
 function Payment() {
@@ -147,13 +148,26 @@ function Payment() {
                   </div>
                 </div>
               </div>
-              <CreditCard
-                flip={flip}
-                cardNumber={formik.values.cardNumber}
-                cardCvv={formik.values.cardCvv}
-                cardExpiry={formik.values.cardExpiry}
-                carholderName={formik.values.carholderName}
-              />
+              <div className="col-6">
+                <CreditCard
+                  flip={flip}
+                  cardNumber={formik.values.cardNumber}
+                  cardCvv={formik.values.cardCvv}
+                  cardExpiry={formik.values.cardExpiry}
+                  carholderName={formik.values.carholderName}
+                />
+              </div>
+            </div>
+            <div className="row mt-2">
+              <div className="col-1">
+                <img src={sslIcon} alt="SSL icon" />
+              </div>
+              <div className="col">
+                <p className="mt-3">
+                  We use secure SSL transmission and encrypted storage to
+                  protect your personal information.
+                </p>
+              </div>
             </div>
           </div>
           <div className="row">
