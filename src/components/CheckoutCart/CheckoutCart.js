@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
-import { theme } from "../../constants/materialUiColors";
-
 import ShoppingCartItem from "../ShoppingCartItem";
 import ButtonLink from "../ButtonLink";
 import { DETAIL } from "../../constants/routes";
@@ -65,7 +63,6 @@ function CheckoutCart({
                   label=""
                   variant="outlined"
                   size="small"
-                  theme={theme}
                   error={state.error}
                   helperText={state.errorCode}
                 />
@@ -74,7 +71,6 @@ function CheckoutCart({
                 <Button
                   variant="outlined"
                   color="primary"
-                  theme={theme}
                   onClick={discountCode}
                 >
                   Apply
